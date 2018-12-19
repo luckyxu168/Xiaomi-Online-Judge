@@ -1,0 +1,7 @@
+def solution(line):
+    # 缩进请使用 4 个空格，遵循 PEP8 规范
+    # please write your code here
+    l = line.split()
+    l = list(map(eval,l))
+    return 2*sum(set(l))-sum(l)
+    
