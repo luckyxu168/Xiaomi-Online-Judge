@@ -1,0 +1,6 @@
+def solution(line):
+    # 缩进请使用 4 个空格，遵循 PEP8 规范
+    # please write your code here
+    l = line.split()
+    return int(l[0])+int(l[-1])
+    # return 'your_answer'
