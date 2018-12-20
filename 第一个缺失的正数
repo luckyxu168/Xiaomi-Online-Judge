@@ -1,0 +1,16 @@
+def solution(line):
+    # please write your code here
+    l = line.split(",")
+    l = list(map(int,l))
+    n = len(l)
+    if n==0:
+        return 1
+    hashed = [0]*n
+    for i in range(n):
+        if l[i]>0 and l[i]<=n:  #只需考虑在数组长度范围内的数
+            hashed[l[i]-1]+=1
+    for i in range(n):
+        if hashed[i]==0:
+            return i+1
+    return n+1
+    # return 'your_answer'
